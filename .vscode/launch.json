@@ -1,0 +1,40 @@
+// change "modname"
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "factoriomod",
+      "request": "launch",
+      "name": "Debug",
+      "factorioPath": "${env:factorioBinaryPath}",
+      "hookMode": "debug",
+      "hookControl": ["modname"],
+      "factorioArgs": ["--load-scenario", "EditorExtensions/testing"],
+      "adjustMods": { "modname": true, "EditorExtensions": true, "flib": true },
+      "disableExtraMods": true
+    },
+    {
+      "type": "factoriomod",
+      "request": "launch",
+      "name": "Debug (data)",
+      "factorioPath": "${env:factorioBinaryPath}",
+      "hookMode": "debug",
+      "hookControl": ["modname"],
+      "hookData": true,
+      "hookSettings": true,
+      "factorioArgs": ["--load-scenario", "EditorExtensions/testing"],
+      "adjustMods": { "modname": true, "EditorExtensions": true, "flib": true },
+      "disableExtraMods": true
+    },
+    {
+      "type": "factoriomod",
+      "request": "launch",
+      "name": "Profile",
+      "factorioPath": "${env:factorioBinaryPath}",
+      "hookMode": "profile",
+      "hookControl": ["modname"],
+      "adjustMods": { "modname": true, "EditorExtensions": true, "flib": true },
+      "disableExtraMods": true
+    }
+  ]
+}
