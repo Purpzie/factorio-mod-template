@@ -1,7 +1,7 @@
 # Factorio Mod Template
-This is based off of [Raiguard's](https://github.com/raiguard) mod template. Replace `modname` in all files, then modify `src/info.json` accordingly.
+This is based off of [Raiguard's](https://github.com/raiguard) mod template. Replace `modname` in all files.
 
-Feel free to use it if you like, but be sure to modify or replace `LICENSE` *and* `src/LICENSE` to use your name. Also, modify `info.json` to use you as the author & contact. If you didn't install Factorio through Steam, you'll also need to modify `launch.json` to include the correct path to `factorio.exe`.
+Feel free to use it if you like, but be sure to modify or replace `LICENSE` *and* `src/LICENSE` to use your name. Also, make sure to change `src/info.json`. If you didn't install Factorio through Steam, you'll also need to modify `launch.json` to include the correct path to `factorio.exe`.
 
 The below section is a part of this template.
 
