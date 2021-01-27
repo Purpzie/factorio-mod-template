@@ -1,11 +1,10 @@
 {
   "name": "modname",
+  "title": "modname",
   "version": "1.0.0",
-  "title": "",
-  "description": "",
   "author": "Purpzie",
-  "contact": "Purpzie#0001 on Discord",
-  "homepage": "",
+  "contact": "Discord: Purpzie#0001",
+  "homepage": "https://github.com/purpzie/modname",
   "factorio_version": "1.1",
   "dependencies": ["base >= 1.1.0"]
 }

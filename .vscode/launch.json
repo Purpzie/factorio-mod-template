@@ -2,38 +2,48 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "factoriomod",
-      "request": "launch",
       "name": "Debug",
-      "factorioPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio\\bin\\x64\\factorio.exe",
-      "hookMode": "debug",
-      "hookControl": ["modname"],
-      "factorioArgs": ["--load-scenario", "EditorExtensions/testing"],
-      "adjustMods": { "modname": true, "EditorExtensions": true, "flib": true },
-      "disableExtraMods": true
-    },
-    {
       "type": "factoriomod",
       "request": "launch",
-      "name": "Debug (data)",
-      "factorioPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio\\bin\\x64\\factorio.exe",
-      "hookMode": "debug",
       "hookControl": ["modname"],
-      "hookData": true,
+      "factorioArgs": ["--load-scenario", "EditorExtensions/testing"],
+      "disableExtraMods": true,
+      "factorioPath": "C:/Program Files (x86)/Steam/steamapps/common/Factorio/bin/x64/factorio.exe",
+      "adjustMods": {
+        "modname": true,
+        "EditorExtensions": true,
+        "flib": true
+      }
+    },
+    {
+      "name": "Debug settings & data",
+      "type": "factoriomod",
+      "request": "launch",
+      "hookControl": ["modname"],
       "hookSettings": true,
+      "hookData": true,
       "factorioArgs": ["--load-scenario", "EditorExtensions/testing"],
-      "adjustMods": { "modname": true, "EditorExtensions": true, "flib": true },
-      "disableExtraMods": true
+      "disableExtraMods": true,
+      "factorioPath": "C:/Program Files (x86)/Steam/steamapps/common/Factorio/bin/x64/factorio.exe",
+      "adjustMods": {
+        "modname": true,
+        "EditorExtensions": true,
+        "flib": true
+      }
     },
     {
+      "name": "Profile",
       "type": "factoriomod",
       "request": "launch",
-      "name": "Profile",
-      "factorioPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio\\bin\\x64\\factorio.exe",
-      "hookMode": "profile",
       "hookControl": ["modname"],
-      "adjustMods": { "modname": true, "EditorExtensions": true, "flib": true },
-      "disableExtraMods": true
+      "hookMode": "profile",
+      "disableExtraMods": true,
+      "factorioPath": "C:/Program Files (x86)/Steam/steamapps/common/Factorio/bin/x64/factorio.exe",
+      "adjustMods": {
+        "modname": true,
+        "EditorExtensions": true,
+        "flib": true
+      }
     }
   ]
 }
